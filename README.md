@@ -35,7 +35,8 @@ const div1 = $("div", body);
 Selects all matching elements (or an empty `NodeList`):
 
 ```js
-const stylesheets = $$('link[rel="stylesheet"]').map(console.log);
+const head = $('head');
+const stylesheets = $$('link[rel="stylesheet"]', head).map(console.log);
 ```
 
 ## Compatibility
