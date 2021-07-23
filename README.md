@@ -35,9 +35,13 @@ const div1 = $("div", body);
 Selects all matching elements (or an empty `NodeList`):
 
 ```js
-const head = $('head');
+const head = $("head");
 const stylesheets = $$('link[rel="stylesheet"]', head).map(console.log);
 ```
+
+## Benchmarks
+
+![ajquery-benchmarks "it's over 9000"](https://user-images.githubusercontent.com/122831/126773141-ba082a86-c394-42d4-99ef-4039681f36be.png)
 
 ## Compatibility
 
