@@ -10,7 +10,7 @@
     "prepare": "npm run build",
     "start": "open example.html",
     "prettier": "npx prettier -w '**/*.{js,md,css,html}'",
-    "build": "npx uglify-js ajquery.js > ajquery.min.js",
+    "build": "npx uglify-js ajquery.js -o ajquery.min.js",
     "test": "node test.js"
   },
   "repository": {
