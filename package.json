@@ -1,0 +1,36 @@
+{
+  "name": "ajquery",
+  "version": "2.0.0",
+  "description": "The fastest, most lightweight, least dependency jQuery alternative",
+  "main": "ajquery.js",
+  "files": [
+    "ajquery.min.js"
+  ],
+  "scripts": {
+    "prepare": "npm run build",
+    "start": "open example.html",
+    "prettier": "npx prettier -w '**/*.{js,md,css,html}'",
+    "build": "npx uglify-js ajquery.js > ajquery.min.js",
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coolaj86/ajquery.js.git"
+  },
+  "keywords": [
+    "AJQuery",
+    "jQuery",
+    "querySelector",
+    "querySelectorAll",
+    "CSS3",
+    "CSS4",
+    "CSS",
+    "selector"
+  ],
+  "author": "AJ ONeal <coolaj86@gmail.com> (https://coolaj86.com/)",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/coolaj86/ajquery.js/issues"
+  },
+  "homepage": "https://twitter.com/coolaj86/status/1303386788119998464"
+}
