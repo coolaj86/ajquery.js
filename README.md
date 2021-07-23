@@ -41,7 +41,7 @@ const stylesheets = $$('link[rel="stylesheet"]', head).map(console.log);
 
 ## Benchmarks
 
-![ajquery-benchmarks "it's over 9000"](https://user-images.githubusercontent.com/122831/126773141-ba082a86-c394-42d4-99ef-4039681f36be.png)
+![ajquery-benchmarks](https://user-images.githubusercontent.com/122831/126773456-58487b6f-8d2b-4b0b-9cda-c7770d7c5fba.png "it's over 9000")
 
 ## Compatibility
 
