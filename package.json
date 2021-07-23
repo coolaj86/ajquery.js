@@ -7,6 +7,7 @@
     "ajquery.js"
   ],
   "scripts": {
+    "benchmark": "node benchmark.js",
     "prepare": "npm run build",
     "start": "open example.html",
     "prettier": "npx prettier -w '**/*.{js,md,css,html}'",
