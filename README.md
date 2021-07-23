@@ -8,7 +8,7 @@ Production Build: 103B (min + gz)
 ## Install
 
 ```html
-<script src="https://unpkg.com/ajquery@latest/ajquery.min.js"></script>
+<script src="https://unpkg.com/ajquery"></script>
 ```
 
 ## Example Usage
