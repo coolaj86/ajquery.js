@@ -1,3 +1,6 @@
+*.gz
+*.min.*
+
 # Logs
 logs
 *.log
