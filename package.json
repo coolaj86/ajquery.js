@@ -1,9 +1,11 @@
 {
   "name": "ajquery",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "The fastest, most lightweight, least dependency jQuery alternative",
   "main": "ajquery.min.js",
-  "files": ["ajquery.js"],
+  "files": [
+    "ajquery.js"
+  ],
   "scripts": {
     "benchmark": "node benchmark.js",
     "prepare": "npm run build",
