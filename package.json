@@ -11,7 +11,7 @@
     "prepare": "npm run build",
     "start": "open example.html",
     "prettier": "npx prettier -w '**/*.{js,md,css,html}'",
-    "build": "npx uglify-js ajquery.js > ajquery.min.js",
+    "build": "npx uglify-js ajquery.js -o ajquery.min.js",
     "test": "node test.js"
   },
   "repository": {
@@ -33,5 +33,9 @@
   "bugs": {
     "url": "https://github.com/coolaj86/ajquery.js/issues"
   },
-  "homepage": "https://twitter.com/coolaj86/status/1303386788119998464"
+  "homepage": "https://twitter.com/coolaj86/status/1303386788119998464",
+  "dependencies": {
+    "jshint": "^2.13.0",
+    "prettier": "^2.3.2"
+  }
 }
