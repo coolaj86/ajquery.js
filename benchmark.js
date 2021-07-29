@@ -4,6 +4,8 @@ async function main() {
   console.info("jQuery: 178");
   await sleep(761);
   console.info("DOM: 1428");
+  await sleep(696);
+  console.info("Angular: 2517");
   await sleep(520);
   console.info("React: 3785");
   await sleep(230);
