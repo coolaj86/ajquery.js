@@ -3,5 +3,5 @@ function $(sel, el) {
 }
 
 function $$(sel, el) {
-  return (el || document).querySelectorAll(sel);
+  return Array.from((el || document).querySelectorAll(sel));
 }
