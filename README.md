@@ -7,6 +7,22 @@ Production Build: 103B (min + gz)
 
 ## Install
 
+### via GitHub
+
+```bash
+my_ver="v2.1.2"
+
+mkdir ./vendor/
+curl -fsSL "https://raw.githubusercontent.com/coolaj86/ajquery.js/${my_ver}/ajquery.js" \
+    -o ./vendor/ajquery.js
+```
+
+```html
+<script src="/vendor/ajquery.js"></script>
+```
+
+### via CDN
+
 ```html
 <script src="https://unpkg.com/ajquery"></script>
 ```
