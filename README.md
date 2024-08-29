@@ -2,8 +2,8 @@
 
 The fastest, most lightweight, fewest dependency jQuery alternative.
 
-Development Build: 145B (with comments) \
-Production Build: 103B (min + gz)
+Development Build: 572B (types + comments) \
+Production Build: 146B (min + gz)
 
 ## Example Usage
 
@@ -18,11 +18,15 @@ console.log("innerText:", $("p:nth-child(2").innerText);
 ### via GitHub
 
 ```bash
-my_ver="v2.1.2"
+my_ver="v3.0.0"
 
 mkdir ./vendor/
+
 curl -fsSL "https://raw.githubusercontent.com/coolaj86/ajquery.js/${my_ver}/ajquery.js" \
     -o ./vendor/ajquery.js
+
+# Lighthouse-optimized
+npx -p uglify-js@3 uglifyjs ./vendor/ajquery.js -o ./vendor/ajquery.min.js
 ```
 
 ```html
@@ -32,7 +36,41 @@ curl -fsSL "https://raw.githubusercontent.com/coolaj86/ajquery.js/${my_ver}/ajqu
 ### via CDN
 
 ```html
-<script src="https://unpkg.com/ajquery"></script>
+<script src="https://unpkg.com/ajquery@3.0.0/ajquery.min.js"></script>
+```
+
+Bundler-optimized:
+
+```html
+<script src="https://unpkg.com/ajquery@3.0.0/ajquery.min.cjs"></script>
+```
+
+Tree-shaking-optimized:
+
+```html
+<script src="https://unpkg.com/ajquery@3.0.0/ajquery.min.mjs"></script>
+```
+
+### via NPM
+
+```sh
+npm install --save ajquery@3
+```
+
+#### CommonJS
+
+```js
+let AJQuery = require("ajquery");
+let $ = AJQuery.$;
+let $$ = AJQuery.$$;
+```
+
+#### ESM
+
+```js
+import AJQuery from "ajquery";
+let $ = AJQuery.$;
+let $$ = AJQuery.$$;
 ```
 
 ## API

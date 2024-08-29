@@ -2,14 +2,31 @@
   "name": "ajquery",
   "version": "2.1.2",
   "description": "The fastest, most lightweight, least dependency jQuery alternative",
-  "main": "ajquery.min.js",
+  "main": "ajquery.cjs",
+  "module": "ajquery.mjs",
+  "type": "commonjs",
+  "browser": {
+    "ajquery.min.cjs": "ajquery.min.js"
+  },
+  "exports": {
+    ".": {
+      "require": "./ajquery.cjs",
+      "import": "./ajquery.mjs",
+      "default": "./ajquery.cjs"
+    }
+  },
   "files": [
-    "ajquery.js"
+    "ajquery.js",
+    "ajquery.min.js",
+    "ajquery.cjs",
+    "ajquery.min.cjs",
+    "ajquery.mjs",
+    "ajquery.min.mjs"
   ],
   "scripts": {
     "benchmark": "node benchmark.js",
     "prepare": "npm run build",
-    "start": "open example.html",
+    "start": "open http://localhost/example.html && caddy file-server --browse --root .",
     "prettier": "npx prettier -w '**/*.{js,md,css,html}'",
     "build": "npx uglify-js ajquery.js -o ajquery.min.js",
     "test": "node test.js"

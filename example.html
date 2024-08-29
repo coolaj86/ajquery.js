@@ -9,4 +9,15 @@
     let text = $("body").textContent;
     console.log(text);
   </script>
+
+  <script src="./ajquery.min.cjs"></script>
+  <script>
+    console.log("globalThis.AJQuery:", globalThis.AJQuery);
+  </script>
+
+  <script type="module" src="./ajquery.min.mjs"></script>
+  <script type="module">
+    import AJQuery from "./ajquery.mjs";
+    console.log("imported AJQuery", AJQuery);
+  </script>
 </body>
