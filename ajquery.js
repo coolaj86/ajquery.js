@@ -1,7 +1,10 @@
-function $(sel, $parent = document) {
-  return $parent.querySelector(sel);
+function $(cssSelector, $parent = document) {
+  let $child = $parent.querySelector(cssSelector);
+  return $child;
 }
 
-function $$(sel, $parent = document) {
-  return Array.from($parent.querySelectorAll(sel));
+function $$(cssSelector, $parent = document) {
+  let nodeList = $parent.querySelectorAll(cssSelector);
+  let $children = Array.from(nodeList);
+  return $children;
 }
