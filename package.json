@@ -24,12 +24,21 @@
     "ajquery.min.mjs"
   ],
   "scripts": {
-    "benchmark": "node benchmark.js",
-    "prepare": "npm run build",
+    "benchmark": "node ./benchmark.js",
+    "build": "npm run build-all",
+    "bump": "npm version -m \"chore(release): bump to v%s\"",
+    "fmt": "npm run prettier",
+    "lint": "npm run jshint && npm run tsc",
     "start": "open http://localhost/example.html && caddy file-server --browse --root .",
+    "test": "node ./tests/",
+    "--------": "---------------------------------------",
+    "build-all": "npx uglify-js ajquery.js -o ajquery.min.js && npx uglify-js ajquery.cjs -o ajquery.min.cjs && npx uglify-js ajquery.js -o ajquery.min.mjs",
+    "jshint": "npx -p jshint@2.x -- jshint -c ./.jshintrc ./ajquery.js ./ajquery.cjs ./ajquery.mjs",
+    "prepare": "npm run build",
+    "prepublish": "npm run reexport-types",
     "prettier": "npx prettier -w '**/*.{js,md,css,html}'",
-    "build": "npx uglify-js ajquery.js -o ajquery.min.js",
-    "test": "node test.js"
+    "reexport-types": "npx -p jswt@1.x -- reexport",
+    "tsc": "npx -p typescript@5.x -- tsc -p ./jsconfig.json"
   },
   "repository": {
     "type": "git",
