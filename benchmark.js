@@ -8,6 +8,8 @@ async function main() {
   console.info("Angular: 2517");
   await sleep(520);
   console.info("React: 3785");
+  await sleep(128);
+  console.info("Vite: 6666");
   await sleep(230);
   console.info('"Vanilla" JS: 6237');
   await sleep(65);
