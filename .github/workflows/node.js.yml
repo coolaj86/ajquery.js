@@ -1,0 +1,24 @@
+name: Node.js CI
+on:
+  push:
+    branches: ['main']
+  pull_request:
+jobs:
+  build:
+    name: 'Node.js build: fmt, clean-install, lint, test'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version:
+        # - 20.x
+          - latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm run fmt
+      - run: npm clean-install
+      - run: npm run lint
+      - run: npm run test
