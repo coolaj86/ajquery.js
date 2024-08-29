@@ -5,6 +5,14 @@ The fastest, most lightweight, fewest dependency jQuery alternative.
 Development Build: 145B (with comments) \
 Production Build: 103B (min + gz)
 
+## Example Usage
+
+Provides modern, advanced CSS4-compatible query selection:
+
+```js
+console.log("innerText:", $("p:nth-child(2").innerText);
+```
+
 ## Install
 
 ### via GitHub
@@ -25,14 +33,6 @@ curl -fsSL "https://raw.githubusercontent.com/coolaj86/ajquery.js/${my_ver}/ajqu
 
 ```html
 <script src="https://unpkg.com/ajquery"></script>
-```
-
-## Example Usage
-
-Provides modern, advanced CSS4-compatible query selection:
-
-```js
-console.log("innerText:", $("p:nth-child(2").innerText);
 ```
 
 ## API
