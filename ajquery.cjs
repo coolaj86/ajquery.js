@@ -1,4 +1,6 @@
 /**
+ * AJQuery - The fastest, most lightweight, least dependency jQuery alternative,
+ *           now typed, Ai-enhanced, and better than ever!
  * @typedef AJQuery
  * @prop {AJQuerySelector} $
  * @prop {AJQuerySelectorAll} $$

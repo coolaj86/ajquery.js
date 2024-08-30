@@ -1,4 +1,9 @@
 /**
+ * AJQuery - The fastest, most lightweight, least dependency jQuery alternative,
+ *           now typed, Ai-enhanced, and better than ever!
+ */
+
+/**
  * Select first matching element, just like console $
  * @param {String} cssSelector
  * @param {ParentNode} [$parent=document]

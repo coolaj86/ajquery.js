@@ -1,6 +1,7 @@
 # [ajquery.js](https://git.coolaj86.com/coolaj86/ajquery.js)
 
-The fastest, most lightweight, fewest dependency jQuery alternative.
+The fastest, most lightweight, fewest dependency jQuery alternative. \
+**New**: Now typed, Ai-enhanced, and better than ever!
 
 Development Build: 572B (types + comments) \
 Production Build: 117B (min + gz)

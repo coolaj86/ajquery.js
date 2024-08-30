@@ -4,7 +4,7 @@ let AJQuery = { $, $$ };
 
 /**
  * AJQuery - The fastest, most lightweight, least dependency jQuery alternative,
- *           now Ai-enhanced, and better than ever!
+ *           now typed, Ai-enhanced, and better than ever!
  * @namespace AJQuery
  */
 
