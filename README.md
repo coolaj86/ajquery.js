@@ -19,7 +19,7 @@ console.log("innerText:", $("p:nth-child(2").innerText);
 ### via GitHub
 
 ```bash
-my_ver="v3.0.0"
+my_ver="v3.0.3"
 
 mkdir ./vendor/
 
@@ -37,19 +37,19 @@ npx -p uglify-js@3 uglifyjs ./vendor/ajquery.js -o ./vendor/ajquery.min.js
 ### via CDN
 
 ```html
-<script src="https://unpkg.com/ajquery@3.0.0/ajquery.min.js"></script>
+<script src="https://unpkg.com/ajquery@3.0.3/ajquery.min.js"></script>
 ```
 
 Bundler-optimized:
 
 ```html
-<script src="https://unpkg.com/ajquery@3.0.0/ajquery.min.cjs"></script>
+<script src="https://unpkg.com/ajquery@3.0.3/ajquery.min.cjs"></script>
 ```
 
 Tree-shaking-optimized:
 
 ```html
-<script src="https://unpkg.com/ajquery@3.0.0/ajquery.min.mjs"></script>
+<script src="https://unpkg.com/ajquery@3.0.3/ajquery.min.mjs"></script>
 ```
 
 ### via NPM
