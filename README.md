@@ -3,7 +3,7 @@
 The fastest, most lightweight, fewest dependency jQuery alternative.
 
 Development Build: 572B (types + comments) \
-Production Build: 146B (min + gz)
+Production Build: 117B (min + gz)
 
 ## Example Usage
 
