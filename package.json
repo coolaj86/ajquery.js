@@ -1,6 +1,6 @@
 {
   "name": "ajquery",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "The fastest, most lightweight, least dependency jQuery alternative. Now typed, Ai-enhanced, and better than ever!",
   "main": "ajquery.cjs",
   "module": "ajquery.mjs",
