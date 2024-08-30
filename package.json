@@ -5,6 +5,7 @@
   "main": "ajquery.cjs",
   "module": "ajquery.mjs",
   "type": "commonjs",
+  "types": "./select-dom.d.ts",
   "browser": {
     "ajquery.min.cjs": "ajquery.min.js"
   },
@@ -21,7 +22,8 @@
     "ajquery.cjs",
     "ajquery.min.cjs",
     "ajquery.mjs",
-    "ajquery.min.mjs"
+    "ajquery.min.mjs",
+    "select-dom.d.ts"
   ],
   "scripts": {
     "benchmark": "node ./benchmark.js",
@@ -62,5 +64,8 @@
   "bugs": {
     "url": "https://github.com/coolaj86/ajquery.js/issues"
   },
-  "homepage": "https://twitter.com/coolaj86/status/1303386788119998464"
+  "homepage": "https://twitter.com/coolaj86/status/1303386788119998464",
+  "devDependencies": {
+    "typed-query-selector": "^2.12.0"
+  }
 }
